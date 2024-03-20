@@ -1,13 +1,13 @@
 from fastapi import FastAPI
 
+from src.routes import contacts, users
+
 app = FastAPI()
 
-
-@app.get("/api/healthchecker")
-def root():
-    return {"message": "Welcome to FastAPI!"}
+app.include_router(contacts.router, prefix="/api")
+app.include_router(users.router, prefix="/api")
 
 
-@app.get("/notes/{note_id}")
-async def read_note(note_id: int):
-    return {"note": note_id}
+@app.get("/")
+def read_root():
+    return {"message": "Hello World"}
