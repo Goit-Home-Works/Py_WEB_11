@@ -55,3 +55,12 @@ In addition to the basic CRUD functionality, the API should also have the follow
 <li>Provision of API documentation</li>
 <li>Use of the Pydantic data validation module</li>
 </ul>
+
+<h2 align="left" style="color:blue;">Execution</h2>
+<div>
+  To run the program, copy and paste the following command into the terminal:
+  <pre>python3 src/main.py</pre>
+</div>
+<div>
+  In the Home tab, click on the API DOC button.
+</div>

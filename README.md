@@ -1,3 +1,5 @@
+
+
 <h1 align="left" style="color:blue;">Домашнє завдання 11</h1>
 
 <p style="font-size:18px;">
@@ -58,7 +60,10 @@ API повинен мати можливість виконувати насту
 <h2 align="left" style="color:blue;">Виконання</h2>
 
 <div>
-  
+  Щоб запустити програму, скопіюйте та вставте наступну команду у термінал:
+  <pre>python3 src/main.py</pre>
 </div>
 
-
+<div>
+  В вкладке Home  натиснить на кнопку API DOC.
+</div>
