@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en" class="h-100">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>HOME WORK 11</title>
+    <link rel="icon" href="{{ url_for('static', path='/favicon.ico') }}">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 18px;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 48rem) {
+            .bd-placeholder-img-lg {
+                font-size: 56px;
+            }
+        }
+    </style>
+
+    <!-- Custom styles for this template -->
+    <link href="{{ url_for('static', path='styles.css') }}" rel="stylesheet">
+</head>
+
+<body class="d-flex h-100 text-center text-white bg-dark">
+
+    <div class="cover-container-sd d-flex w-100 h-100 p-3 mx-auto flex-column" style="amax-width: 72em;">
+        <header class="mb-auto">
+            <div>
+                <a class="float-md-start mb-0 nav-link"  target="_blank"
+                        href="#">GoIT_WEB_HW_11</a>
+                <nav class="nav nav-masthead justify-content-center float-md-end">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link" target="_blank"
+                        href="https://github.com/SiracencoSerghei/Py_WEB_11">Features</a>
+                    <a class="nav-link" target="_blank"
+                        href="https://www.linkedin.com/in/siracenco-serghei/">Contact</a>
+                </nav>
+            </div>
+        </header>
+
+        <main class="px-3">
+            <h1>{{tilte}}</h1>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                        aria-label="Slide 5"></button>
+                </div>
+                <div class="carousel-inner" style="padding: 3.125rem; height: 15.625rem;">
+                    <div class="carousel-item active">
+                        <h4>Мета цього домашнього завдання</h4>
+                        <p class="lead">
+                            Cтворити REST API для зберігання та управління контактами. API повинен бути побудований з
+                            використанням інфраструктури FastAPI та використовувати SQLAlchemy для управління базою
+                            даних.
+                        <p class="lead">
+                        </p>
+                    </div>
+                    <div class="carousel-item">
+                        <h4>Контакти повинні зберігатися в базі даних та містити в собі наступну інформацію:</h4>
+                        <p class="lead">
+                            - Ім'я
+                            - Прізвище
+                            - Електронна адреса
+                            - Номер телефону
+                            - День народження
+                            - Додаткові дані (необов'язково)
+                        </p>
+                    </div>
+                    <div class="carousel-item">
+                        <h4>API повинен мати можливість виконувати наступні дії:</h4>
+                        <p class="lead">
+                            - Створити новий контакт
+                            - Отримати список всіх контактів
+                            - Отримати один контакт за ідентифікатором
+                            - Оновити існуючий контакт
+                            - Видалити контакт
+                        </p>
+                    </div>
+                    <div class="carousel-item">
+                        <h4>На придачу до базового функціоналу CRUD API також повинен мати наступні функції:</h4>
+                        <p class="lead">
+                            - Контакти повинні бути доступні для пошуку за іменем, прізвищем чи адресою електронної
+                            пошти (Query).
+                            - API повинен мати змогу отримати список контактів з днями народження на найближчі 7 днів.
+                        </p>
+                    </div>
+                    <div class="carousel-item">
+                        <h4> Загальні вимоги:</h4>
+                        <p class="lead">
+                            1. Використання фреймворку FastAPI для створення API
+                            2. Використання ORM SQLAlchemy для роботи з базою даних
+                            3. В якості бази даних слід використовувати PostgreSQL.
+                            4. Підтримка CRUD операцій для контактів
+                            5. Підтримка зберігання дати народження контакту
+                            6. Надання документів для API
+                            7. Використання модуля перевірки достовірності даних Pydantic
+                        </p>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" style="margin-right: 9.375rem;" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" style="margin-left: 9.375rem;" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <a href="docs/" class="btn btn-lg btn-secondary fw-bold border-white bg-white" target="_blank" rel="noopener noreferrer">API DOC</a>
+        </main>
+
+        <footer class="mt-auto text-white-50">
+            <p><a class="btn btn-sm btn-success bg-transparent border-0"" href="https://github.com/SiracencoSerghei/"
+                    target="_blank">Goit WEB HW-11. ©Sergio</a></p>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
