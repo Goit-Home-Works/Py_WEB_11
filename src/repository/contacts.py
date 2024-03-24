@@ -38,7 +38,7 @@ async def update(contact_id: int, body: ContactModel, db: Session):
     contact = await get_contact_by_id(contact_id, db)
     if contact:
         contact.first_name = body.first_name
-        contact.last_name = body.second_name
+        contact.last_name = body.last_name
         contact.email = body.email
         contact.phone = body.phone
         contact.birthday = body.birthday
